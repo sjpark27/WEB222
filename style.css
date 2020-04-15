@@ -16,16 +16,21 @@ body {
 }
 
 @media (min-width: 600px){
+  .container{
+    width: 600px;
+  }
   .c1 {
     width: 60%;
   }
   .c2 {
     width: 40%;
   }
-
 }
 
 @media (min-width: 800px){
+  .container{
+    width: 800px;
+  }
   .c1{
     width: 60%;
   }
