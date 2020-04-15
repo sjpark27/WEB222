@@ -43,12 +43,19 @@ body {
     margin: 0;
     border-left: 2px solid #454545;
   }
+  .c4, .c5 {
+    width: 100%;
+  }
+
   #category{
     margin: 0.5em;
     float: left;
     border-bottom: none;
   }
   #title{
+    display: none;
+  }
+  .Description{
     display: none;
   }
 }
@@ -66,6 +73,9 @@ body {
   }
   #title{
     display: inline-table;
+  }
+  .Description{
+    display: contents;
   }
 }
 
@@ -227,7 +237,7 @@ body {
 
 .box {
   margin: 30px 0 0 0;
-  width: 1400px;
+  width: 90%;
   height: 200px;
   background-color: white;
   border-radius: 10px;
