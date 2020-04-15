@@ -5,17 +5,13 @@ body {
 * { box-sizing: border-box; }
 
 .container {
-  border: 1px solid #0f0f0f;
-  box-shadow: 0 0 10px #303030;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-@media (min-width: 300px){
+@media (min-width: 600px){
   .c1{
     width: 60%;
   }
@@ -56,6 +52,10 @@ body {
 @media (min-width: 800px){
   .container{
     width: 800px;
+    border: 1px solid #0f0f0f;
+    box-shadow: 0 0 10px #303030;  
+    margin-left: auto;
+    margin-right: auto;   
   }
   #title{
     display: inline-table;
@@ -64,7 +64,9 @@ body {
 
 @media (min-width: 1200px){
   .container {
-    width: 1200px;    
+    width: 1200px;   
+    margin-left: auto;
+    margin-right: auto;   
   }
   .c1, .c2 {
     width: 100%;
