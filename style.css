@@ -16,9 +16,6 @@ body {
 }
 
 @media (min-width: 300px){
-  .container{
-    width: 600px;
-  }
   .c1{
     width: 60%;
   }
