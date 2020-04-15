@@ -2,57 +2,137 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WEB222 Final</title>
+    <title>WEB222 Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class = "container">
-        <div class = "c1">
-          <a href="index.html"><img id = "logo" src = "image/logo.png" alt = "No Image" height="100"></a>
-          <h1><a href="index.html">SANG JOON PARK</a></h1>
-          <h1><a href="https://www.senecacollege.ca/home.html">SENECA</a></h1>
-        </div>
-        <div class = "c2">
-          <div id = "profileList">
-            <h2>PROFILE</h2>
-            <ul>
-              <li>South Korean</li>
-              <li>Multilingual</li>
-              <li>javascript</li>
-              <li>SQL</li>
-              <li>C++</li>
-              <li>MAYA</li>
-              <li>PHOTOSHOP</li>
-              <li>ILLUSTRATOR</li>
-            </ul>  
-          </div>
-        </div>
-        <div class = "c3">
-          <div class="clearfix">
-            <div class="box"><h3>한국어</h3></div>
-            <div class="box"><h3>日本語</h3></div>
-            <div class="box"><h3>汉语</h3></div>
-            <div class="box"><h3>English</h3></div>
-          </div>
+    <div class="container">
+      <div class = "c1">
+        <img src="images/logo.png" alt="No Logo" height="40" />
+        <a> SJ.MANGA WORLD </a>
+      </div>
+      <div class = "c2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class ="c3">
+          <h2 id="category">Genre</h2>
+          <ul>
+            <li id="menu_all"><a href="#">All</a></li>
+            <li id="menu_action"><a href="#">Action</a></li>
+            <li id="menu_adv"><a href="#">Adventure</a></li>
+            <li id="menu_sports"><a href="#">Sports</a></li>
+          </ul>
         </div>
         <div class = "c4">
-          <div class="clearfix">
-            <div class="box2"><h3>javascript</h3></div>
-            <div class="box2"><h3>Oracle SQL</h3></div>
-            <div class="box2"><h3>C & C++</h3></div>
-          </div>
+          <h1 id="subtitle">List of All Manga</h1>
+          <ul id="mangaList"></ul>
         </div>
-        <div class = "c5">
-          <div class="clearfix">
-            <div class="box3"><h3>MAYA</h3></div>
-            <div class="box3"><h3>PHOTOSHOP</h3></div>
-            <div class="box3"><h3>ILLUSTRATOR</h3></div>
-          </div>
+      <div class = "c5">
+        <h3>ⓒ2020 Sang Joon Park -- sjpark27@myseneca.ca</h3>
+        <h4>Subscribe Newsletter</h4>
+        <div>
+          <form action="https://formspree.io/xvobgdqg" method="POST">
+            <h4 style="float: left;">Your email:</h4>
+            <input type="text" name="_replyto" style="float: left;" />
+            <input type="submit" value="Subscribe" style="float: left;" />
+          </form>
         </div>
-        <div class = "c6">
-          <h4>ⓒ copyright - Sang Joon Park - 2020</h4> 
-        </div>
+      </div>
     </div>
+    <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->
+    <script src="script.js"></script>
   </body>
 </html>
