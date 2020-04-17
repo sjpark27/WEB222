@@ -76,9 +76,6 @@ body {
     margin-left: auto;
     margin-right: auto;   
   }
-  #title{
-    display: inline-table;
-  }
   li div img{
     display: block;
   }
@@ -93,6 +90,9 @@ body {
 @media (min-width: 600px){
   .Description{
     display: contents;
+  }
+  #title{
+    display: inline-table;
   }
 }
 @media (min-width: 1200px){
