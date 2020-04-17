@@ -28,7 +28,7 @@ body {
     overflow: hidden;
   }
   .c3 a{
-    padding: 1vh 3vh;
+    padding: 1vh 2vh;
     font-size: 3vh;
     border-right:0.3vh solid #585858;
   }
@@ -48,6 +48,7 @@ body {
     width: 100%;
   }
   #category{
+    max-width: 100%;
     display: none;
     padding: 1vh 3vh;
     font-size: 3vh;
@@ -88,9 +89,6 @@ body {
 }
 
 @media (min-width: 600px){
-  .Description{
-    display: contents;
-  }
   #title{
     display: inline-table;
   }
@@ -101,6 +99,7 @@ body {
     width: 40%;
   }
 }
+
 @media (min-width: 1200px){
   .container {
     width: 1200px;   
@@ -130,7 +129,7 @@ body {
     width: 100%;
   }
   .c3 a{
-    display: table;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 0.3vh solid #585858;  
@@ -145,6 +144,9 @@ body {
     margin: 5px;
     border-right: none;
     border-bottom: 0.3vh solid #585858;  
+  }
+  .Description{
+    display: contents;
   }
 }
 
@@ -334,8 +336,10 @@ li div img {
 }
 
 #subtitle {
+  max-width: 100%;
+  margin: 1vh 0 1vh 2vh;
+  font-size: 3vh;
   margin-left: 3vh;
-  font-size: 7vh;
   text-decoration: underline;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -368,4 +372,10 @@ li div img {
 
 .c5 input{
   height: 2vh;
+}
+
+#submit{
+  font-size: 1.5vh;
+  border: 0;
+  padding: 0 1vh;
 }
