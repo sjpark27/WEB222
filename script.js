@@ -102,13 +102,14 @@ function tableCreator(product) {
   var table = document.createElement('table');
   table.className = 'detailTable';
   var tbody = document.createElement('tbody');
-  function rowCreator(colomn, detail) {
+  function rowCreator(column, detail) {
     var tr = document.createElement('tr');
+    tr.className = column;
     var tdLeft = document.createElement('td');
     tdLeft.className = 'rowLeft';
     var tdRight = document.createElement('td');
     tdRight.className = 'rowRight';
-    tdLeft.innerHTML = colomn;
+    tdLeft.innerHTML = column;
     tdRight.innerHTML = detail;
     tr.appendChild(tdLeft);
     tr.appendChild(tdRight);
@@ -181,47 +182,46 @@ function cardBoxCreator(product) {
 }
 
 function listCreator(ProductList) {
-  var list_obj = document.createElement('li');
+  var mangaList = document.querySelector("#mangaList");
   for (var i = 0; i < ProductList.length; i++) {
     var box = cardBoxCreator(ProductList[i]);
-    list_obj.appendChild(box);
+    mangaList.appendChild(box);
     //  console.log(ProductList[i].name);
   }
-  return list_obj;
 }
 
 // 카드 박스를 메인/#mainDisplay에 넣기
 function menuSelector() {
   clearList();
   var all = getListAll();
-  document.querySelector('#mangaList').appendChild(listCreator(all));
+  listCreator(all);
 
   document.querySelector('#menu_all').onclick = function() {
     clearList();
     document.querySelector('#subtitle').innerHTML = 'List of All Manga';
     var all = getListAll();
-    document.querySelector('#mangaList').appendChild(listCreator(all));
+    listCreator(all);
   };
 
   document.querySelector('#menu_action').onclick = function() {
     clearList();
     document.querySelector('#subtitle').innerHTML = 'List of Action Manga';
     var act = getListByGenre('Action');
-    document.querySelector('#mangaList').appendChild(listCreator(act));
+    listCreator(act);
   };
 
   document.querySelector('#menu_adv').onclick = function() {
     clearList();
     document.querySelector('#subtitle').innerHTML = 'List of Adventure Manga';
     var adv = getListByGenre('Adventure');
-    document.querySelector('#mangaList').appendChild(listCreator(adv));
+    listCreator(adv);
   };
 
   document.querySelector('#menu_sports').onclick = function() {
     clearList();
     document.querySelector('#subtitle').innerHTML = 'List of Sports Manga';
     var sports = getListByGenre('Sports');
-    document.querySelector('#mangaList').appendChild(listCreator(sports));
+    listCreator(sports);
   };
 }
 
