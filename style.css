@@ -14,10 +14,10 @@ body {
 
 @media (min-width: 100px){
   .c1{
-    width: 55%;
+    width: 40%;
   }
   .c2{
-    width: 45%;
+    width: 60%;
     height: 7vh;
     overflow: hidden;
   }
@@ -93,6 +93,12 @@ body {
   }
   #title{
     display: inline-table;
+  }
+  .c1{
+    width: 60%;
+  }
+  .c2{
+    width: 40%;
   }
 }
 @media (min-width: 1200px){
@@ -331,7 +337,7 @@ li div img {
   margin-left: 3vh;
   font-size: 7vh;
   text-decoration: underline;
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .c5 h3 {
