@@ -73,9 +73,6 @@ body {
   #title{
     display: inline-table;
   }
-  .Description{
-    display: contents;
-  }
   li div img{
     display: block;
   }
@@ -87,6 +84,11 @@ body {
   }
 }
 
+@media (min-width: 600px){
+  .Description{
+    display: contents;
+  }
+}
 @media (min-width: 1200px){
   .container {
     width: 1200px;   
@@ -232,6 +234,7 @@ body {
 .box {
   margin-bottom: 5vh;
   width: 90%;
+  height: 20vh;
   background-color: white;
   border-radius: 1vh;
   border: 0.3vh solid #679b9b;
@@ -267,7 +270,7 @@ li div img {
   position: relative;
   bottom: 9vh;
   height: 20vh;
-  max-width: 15vh;
+  width: 15vh;
   margin-left: 1vh;
   margin-right: 1vh;
   background-color: #0f0f0f;
@@ -343,3 +346,7 @@ li div img {
   text-shadow: 2px 2px 3px #0b3052;
 }
 
+.c5 input{
+  height: 2vh;
+  font-size: 50%;
+}
