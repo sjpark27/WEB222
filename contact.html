@@ -2,183 +2,180 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>WEB222 Store - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB222 Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <img src="images/logo.png" alt="No Logo" height="40" />
-        <a> SJ.MANGA WORLD </a>
-      </header>
-      <nav>
-        <ul style="margin:0; padding:0;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-      <div style="background-color: #706c61; overflow: auto;">
-        <aside>
-          <h2 id="category">Contact</h2>
-        </aside>
-        <main>
-          <div id="contactForm">
-            <h1>Contact Us</h1>
-            <h2>Please Complete Form Below</h2>
-            <form action="https://httpbin.org/post" method="post">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="rowLeft">First Name:</td>
-                    <td>
-                      <input type="text" name="FName" style="width: 200px;" required />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Last Name:</td>
-                    <td>
-                      <input type="text" name="LName" style="width: 200px;" required />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Email:</td>
-                    <td>
-                      <input type="email" name="email" style="width: 300px;" required />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Address:</td>
-                    <td>
-                      <input type="text" name="address" style="width: 300px;" required />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">City:</td>
-                    <td>
-                      <input type="text" name="city" style="width: 200px;" required list="city" />
-                      <datalist id="city">
-                        <option value="Toronto"> </option>
-                        <option value="Montreal"> </option>
-                        <option value="Vancouver"> </option>
-                        <option value="Ottawa"> </option>
-                        <option value="Calgary"> </option>
-                        <option value="Edmonton"> </option>
-                        <option value="Mississauga"> </option>
-                        <option value="Winnipeg"> </option>
-                        <option value="Brampton"> </option>
-                        <option value="Quebec City"> </option>
-                      </datalist>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Phone Number:(xxx-xxx-xxxx)</td>
-                    <td>
-                      <input
-                        type="tel"
-                        name="phone"
-                        style="width: 300px;"
-                        required
-                        pattern="\d{3}[\-]?\d{3}[\-]?\d{4}"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Postal Code:</td>
-                    <td>
-                      <input
-                        type="text"
-                        name="postalCode"
-                        style="width: 300px;"
-                        required
-                        pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Would you like to be phoned?:</td>
-                    <td class="rowRight">
-                      <input type="checkbox" name="phone" id="phoned" value="1" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Purpose:</td>
-                    <td class="rowRight">
-                      <input
-                        type="radio"
-                        name="purpose"
-                        value="Question"
-                        required
-                        onclick="divShow(1);"
-                      />Question
-                      <input
-                        type="radio"
-                        name="purpose"
-                        value="Comment"
-                        onclick="divShow(1);"
-                      />Comment
-                      <input
-                        type="radio"
-                        name="purpose"
-                        value="Order Problem"
-                        onclick="divShow(2);"
-                      />Order Problem
-                    </td>
-                  </tr>
-                  <tr id="orderNo" style="display: none;">
-                    <td class="rowLeft">
-                      Order Number:
-                    </td>
-                    <td class="rowRight">
-                      <input type="text" name="orderNo" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft">Detail of Problem:</td>
-                    <td class="rowRight" style="vertical-align: top;">
-                      <textarea name="problemDetail" rows="5" cols="40" required></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft"></td>
-                    <td class="rowRight">
-                      <input type="hidden" name="Sang Joon Park" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rowLeft"></td>
-                    <td class="rowRight">
-                      <input type="submit" value="Submit" />
-                      <input type="reset" value="Reset" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
-          </div>
-          <script>
-            function divShow(yes) {
-              if (yes == 2) {
-                document.getElementById('orderNo').style.display = '';
-              } else {
-                document.getElementById('orderNo').style.display = 'none';
-              }
-            }
-          </script>
-        </main>
+      <div class = "c1">
+        <img src="images/logo.png" alt="No Logo"/>
+        <a id = "title"> SJ.MANGA WORLD </a>
       </div>
+      <div class = "c2">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+    <div class ="c3">
+      <h2 id="category">Contact</h2>
+    </div>
 
-      <div class="clear"></div>
-      <footer>
+    <div class="c4">
+      <div id="contactForm">
+        <h1>Contact Us</h1>
+        <h2>Please Complete Form Below</h2>
+        <form action="https://httpbin.org/post" method="post">
+          <table>
+            <tbody>
+              <tr>
+                <td class="rowLeft">First Name:</td>
+                <td>
+                  <input type="text" name="FName" style="width: 60%;" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Last Name:</td>
+                <td>
+                  <input type="text" name="LName" style="width: 60%;" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Email:</td>
+                <td>
+                  <input type="email" name="email" style="width: 70%;" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Address:</td>
+                <td>
+                  <input type="text" name="address" style="width: 70%;" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">City:</td>
+                <td>
+                  <input type="text" name="city" style="width: 60%;" required list="city" />
+                  <datalist id="city">
+                    <option value="Toronto"> </option>
+                    <option value="Montreal"> </option>
+                    <option value="Vancouver"> </option>
+                    <option value="Ottawa"> </option>
+                    <option value="Calgary"> </option>
+                    <option value="Edmonton"> </option>
+                    <option value="Mississauga"> </option>
+                    <option value="Winnipeg"> </option>
+                    <option value="Brampton"> </option>
+                    <option value="Quebec City"> </option>
+                  </datalist>
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Phone:</td>
+                <td>
+                  <input
+                    type="tel"
+                    name="phone"
+                    style="width: 70%;"
+                    required
+                    pattern="\d{3}[\-]?\d{3}[\-]?\d{4}"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Postal Code:</td>
+                <td>
+                  <input
+                    type="text"
+                    name="postalCode"
+                    style="width: 70%;"
+                    required
+                    pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft"></td>
+                <td class="rowRight">
+                  <input type="checkbox" name="phone" id="phoned" value="1" style="height: auto;"/>Would you like to be phoned?
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Purpose:</td>
+                <td class="rowRight">
+                  <input
+                    type="radio"
+                    name="purpose"
+                    value="Question"
+                    required
+                    onclick="divShow(1);"
+                  />Question
+                  <input
+                    type="radio"
+                    name="purpose"
+                    value="Comment"
+                    onclick="divShow(1);"
+                  />Comment
+                  <input
+                    type="radio"
+                    name="purpose"
+                    value="Order Problem"
+                    onclick="divShow(2);"
+                  />Order Problem
+                </td>
+              </tr>
+              <tr id="orderNo" style="display: none;">
+                <td class="rowLeft">
+                  Order Number:
+                </td>
+                <td class="rowRight">
+                  <input type="text" name="orderNo" />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft">Detail of Problem:</td>
+                <td class="rowRight" style="vertical-align: top;">
+                  <textarea name="problemDetail" rows="5" style="width: 90%;" required></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft"></td>
+                <td class="rowRight">
+                  <input type="hidden" name="Sang Joon Park" />
+                </td>
+              </tr>
+              <tr>
+                <td class="rowLeft"></td>
+                <td class="rowRight">
+                  <input type="submit" value="Submit" />
+                  <input type="reset" value="Reset" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <script>
+        function divShow(yes) {
+          if (yes == 2) {
+            document.getElementById('orderNo').style.display = '';
+          } else {
+            document.getElementById('orderNo').style.display = 'none';
+          }
+        }
+      </script>
+    </div>
+
+      <div class = "c5">
         <h3>ⓒ2020 Sang Joon Park -- sjpark27@myseneca.ca</h3>
-        <h4>Subscribe Newsletter</h4>
+        <h3>Subscribe Newsletter</h3>
         <div>
           <form action="https://formspree.io/xvobgdqg" method="POST">
-            <h4 style="float: left;">Your email:</h4>
+            <h3 style="float: left;">Your email:</h3>
             <input type="text" name="_replyto" style="float: left;" />
-            <input type="submit" value="Subscribe" style="float: left;" />
+            <input type="submit" value="Subscribe" style="float: left;" />  
           </form>
         </div>
-      </footer>
+      </div>
     </div>
 
     <!--    
