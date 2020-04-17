@@ -161,12 +161,6 @@ function cardBoxCreator(product) {
   // 박스 오브젝트 생성
   var box = document.createElement('li');
   box.className = 'box';
-  var title = document.createElement('h1');
-  title.innerHTML = product.name;
-  box.appendChild(title);
-  var author = document.createElement('h2');
-  author.innerHTML = product.author;
-  box.appendChild(author);
   // 이미지 오브젝트 생성해서 이미지 가져오기
   var div = document.createElement('div');
   div.class = '';
@@ -174,6 +168,12 @@ function cardBoxCreator(product) {
   img.src = 'images/' + product.code + '.jpg';
   div.appendChild(img);
   box.appendChild(div);
+  var title = document.createElement('h1');
+  title.innerHTML = product.name;
+  box.appendChild(title);
+  var author = document.createElement('h2');
+  author.innerHTML = product.author;
+  box.appendChild(author);
   // 제목, 설명, 카테고리, 가격 출력하기
   var table = tableCreator(product);
   box.appendChild(table);

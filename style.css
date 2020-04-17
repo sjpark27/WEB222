@@ -279,8 +279,6 @@ li div {
 }
 
 li div img {
-  position: relative;
-  bottom: 8vh;
   height: 20vh;
   width: 15vh;
   margin-left: 1vh;
@@ -361,17 +359,21 @@ li div img {
 }
 .c4 table td{
   padding: 0;
+  min-height: 2vh;
 }
 .c4 table .rowLeft{
   padding:0;
   width: 15vh;
 }
 .c4 input{
-  height: 90%;
+  padding: 0 1vh;
 }
-
 .c5 input{
+  font-size: 1.5vh;
   height: 2vh;
+  min-width: 5vh;
+  padding: 0;
+  border:0;
 }
 
 #submit{
